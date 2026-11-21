@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Click a button</h1>
+    <button class="btn" data-color="red" id="red">Red</button>
+    <button class="btn" data-color="green" id="green">Green</button>
+    <button class="btn" data-color="blue" id="blue">Blue</button>
+
+    <script>
+        const button = document.querySelectorAll(".btn");
+
+        button.forEach(function(btn){
+            btn.addEventListener("click", function(event){
+                const color = event.target.dataset.color;
+                document.body.style.backgroundColor = color;
+            });
+        });
+
+        // whatever written in <button class="btn" data-color="red" id="red">Red</button>
+        // data-color or data-name you have to write the same in
+        // dataset.color or dataset.name in the js file.
+    </script>
+</body>
+</html>
