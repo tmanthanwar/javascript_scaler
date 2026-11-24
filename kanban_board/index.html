@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="toolbox">
+        <div class="color-pallete">
+            <div class="color-box color-pink" data-color="#ff6b6b" ></div>
+            <div class="color-box color-blue" data-color="#6bcbff" ></div>
+            <div class="color-box color-green" data-color="#6bff9e" ></div>
+            <div class="color-box color-orange" data-color="#ffb86b" ></div>
+        </div>
+        
+        <button class="add-btn" type="button" aria-label="Add ticket">+</button>
+        <button class="show-all-btn" type="button" aria-label="Show-All-Button">show all button</button>
+    </div>
+
+    <main class="ticket-container"></main>
+
+    <div class="modal hidden">
+        <textarea class="modal-input" placeholder="Enter task description"></textarea>
+    </div>
+
+    <script src="./src.js"></script>
+</body>
+</html>
