@@ -37,6 +37,10 @@ body {
     transition: border 0.2 ease;
 }
 
+.color-box.active{
+    border: 3px solid white;
+}
+
 .color-pink {
     background: #ff6b6b;
 }
@@ -104,6 +108,36 @@ body {
     gap: 10px;
     margin-top: 60px;
     padding: 20px;
+}
+
+.ticket {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    min-height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #3d3d3d;
+}
+
+.ticket-color-band {
+    flex: 0 0 8px;
+}
+
+.ticket-text {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    color: #ffffff;
+    overflow-wrap: break-word;
+}
+
+.ticket-lock {
+    display: flex;
+    flex: 0 0 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .color-box:hover {
