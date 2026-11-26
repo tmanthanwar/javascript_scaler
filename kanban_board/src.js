@@ -47,6 +47,7 @@ function createTicket(taskText, color) {
     ticket.appendChild(colorBand);
     ticket.appendChild(text);
     ticket.appendChild(lock);
+    ticket.appendChild(removeBtn);
 
     //add ticket to ticket-container
     ticketContainer.appendChild(ticket);
