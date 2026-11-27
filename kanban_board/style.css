@@ -37,7 +37,7 @@ body {
     transition: border 0.2s ease;
 }
 
-.color-box.active{
+.color-box.active {
     border: 3px solid white;
 }
 
